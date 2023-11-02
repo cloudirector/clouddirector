@@ -10,11 +10,12 @@ defmodule Cloudirector do
     me
   end
   def open_website(%Cloudirector{website: website} = me) do
-    System.cmd("/bin/chromium", [website])
+    command = "/bin/chromium #{website}"
+    System.cmd(command, [])
     me
   end
 end
 me = %Cloudirector{}
 me = Cloudirector.say_hello(me)
-me = Cloudirector.open_website(me)
+me = Cloudirector.open_website(%Cloudirector{website: Cloudirector.@website})
 ```
