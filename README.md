@@ -1,4 +1,6 @@
 ```elixir
+# This will eventually change to be a
+# bit better but for now here is info
 defmodule Cloudirector do
   @website "https://cloudirector.github.io/"
   defstruct experience: nil
