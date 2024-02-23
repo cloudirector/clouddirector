@@ -1,23 +1,3 @@
-```elixir
-# This will eventually change to be a
-# bit better but for now here is info
-defmodule Cloudirector do
-  @website "https://cloudirector.github.io/"
-  defstruct experience: nil
-  def new do
-    %Cloudirector{}
-  end
-  def say_hello(%Cloudirector{} = me) do
-    IO.puts("wsp nerds go look at my spaghetti code")
-    me
-  end
-  def open_website(%Cloudirector{website: website} = me) do
-    command = "/bin/chromium #{website}"
-    System.cmd(command, [])
-    me
-  end
-end
-me = %Cloudirector{}
-me = Cloudirector.say_hello(me)
-me = Cloudirector.open_website(%Cloudirector{website: Cloudirector.@website})
-```
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=cloudirector&show_icons=true&theme=light&bg_color=E9DAB3&hide_border=true" alt=Stats">
+</p>
