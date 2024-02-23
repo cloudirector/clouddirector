@@ -7,7 +7,7 @@ chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 
 url = "https://cloudirector.github.io"  # Replace with the desired URL
-output_path = "screenshot.png"
+output_path = "/github/workspace/screenshot.png"
 
 driver = webdriver.Chrome(options=chrome_options)
 
