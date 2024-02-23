@@ -21,8 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         npm install
-        # You can also install Puppeteer separately
-        # npm install puppeteer
+        npm install puppeteer
 
     - name: Capture Screenshot
       run: |
