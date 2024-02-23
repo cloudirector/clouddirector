@@ -25,4 +25,4 @@ jobs:
 
     - name: Capture Screenshot
       run: |
-        python capture_screenshot.py
+        python Capture-Screenshot.py
