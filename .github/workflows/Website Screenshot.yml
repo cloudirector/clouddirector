@@ -26,3 +26,9 @@ jobs:
     - name: Capture Screenshot
       run: |
         python Capture-Screenshot.py
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: screenshots
+        path: screenshot.png
